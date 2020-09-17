@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/slick.css?v=1.0.2">
+    <link rel="stylesheet" href="assets/css/aos.css?v=1.0.2">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="nav-wrap header-main">
+                            <nav class="navbar navbar-expand-lg ">
+                                <a class="navbar-brand" href="#" style="padding-left: 1.1rem;">
+                                    <img src="assets/img/logo.png" alt="">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon">
+                                        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                                    </span>
+                                </button>
+                            
+                                <div class="collapse navbar-collapse navigation-nav" id="navbarTogglerDemo02" ">
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar__list">
+                                        <li class="nav-item ">
+                                            <a class="nav-link nav__link" data-scroll="#about" href="#">Dlaczego BKR? <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav__link" data-scroll="#services" href="#">Jak to działa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link nav__link" data-scroll="#team" href="#">Nasz zespół</a>
+                                        </li>
+                                    </ul>
+                                
+                                <div class="header__contacts col-lg-3 ">
+                                    <div class="header__phone">
+                                        <img class="header__phone-img" src="assets/img/phone-receiver.png" alt="">
+                                        <a class="header__contacts-tel" href="tel:+48177707233">+48 17 770 72 33</a>
+                                    </div>
+                                    <div class="header__info">
+                                        <div class="header__time">
+                                            pon.-pt. 9:00-17:00
+                                        </div>
+                                        <div class="header__mail">
+                                            <a class="header__contacts-mail" href="mailto:biuro@rzeszowkredyty.pl ">biuro@rzeszowkredyty.pl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </nav>
+                            </div>
+                            <div class="header__flex d-flex flex-row" data-aos="fade-right">
+                                <div class="header__inner col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="header__inner-headings">
+                                        <h3 class="header__inner-h3">KREDYT hipoteczny</h3>
+                                        <h2 class="header__inner-h2">Dobry start <br>w przyszłość</h2>
+                                    </div>
+                                    <div class="header__inner-text">
+                                        <div class="header__inner-item">
+                                            <img class="header__inner-image" src="assets/img/check.png" alt="">
+                                            „0%” prowizji lub <span class="header__inner-bold">„obniżona marża”</span>
+                                        </div>
+                                        <div class="header__inner-item">
+                                            <img class="header__inner-image" src="assets/img/check.png" alt="">
+                                            <span class="header__inner-bold">bezpłatna</span> pomoc doradcy
+                                        </div>
+                                        <div class="header__inner-item">
+                                            <img class="header__inner-image" src="assets/img/check.png" alt="">
+                                            elastyczne formy <span class="header__inner-bold">współpracy</span>
+                                        </div>
+                                        <div class="header__inner-item">
+                                            <img class="header__inner-image" src="assets/img/check.png" alt="">
+                                            <span class="header__inner-bold">kredytowanie</span> do 90% <br>wartości nieruchomości
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="header__modal col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-left">
+                                    <div class="header__modal-inner">
+                                        <h5 class="header__modal-text" style="text-align: center;">Ile potrzebujesz?</h5>
+                                            <div class="header__modal-calc">
+                                                <div class="header__modal-quote">
+                                                    <div class="header__modal-calc__text">Kwota</div>
+                                                </div>
+                                                <input type="range" name="quote" class="slider" min="0" max="500000" value="300000" style="width: 100%; margin-top: 30px;">
+                                                <span class="slider_label">300 000 zł</span>
+                                                <div class="header__modal-quote">
+                                                    <div class="header__modal-calc__text">Okres spłaty</div>
+                                                    
+                                                </div>
+                                                <input type="range" name="years" class="slider" min="0" max="35" value="35" style="width: 100%; margin-top: 30px;">
+                                                <span class="slider_label">35<span>lat</span></span>
+                                            </div>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Imię*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp"
+                                                        placeholder="Telefon*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                        placeholder="Adres email*">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="check__label form-check-label" for="exampleCheck1">Wyrażam zgodę na przetwarzanie moich danych osobowych, które pozostawiam w powyższym formularzu celem kontaktu od pośrednika Biura Kredytowe BRK. Podtwierdzam zapoznania się z klauzulą informacyjną i rozumiem, że wyrażoną zgodę mogę cofnąć pisząc na adres email biuro@bkrkredyt.pl, a tym samym moje dane zostaną usunięte.</label>
+                                                </div>
+                                                <div class="form-button justify-content-center d-flex">
+                                                    <button type="submit" class="btn-submit align-items-center">Chcę pożyczkę</button>
+                                                </div>
+                                                <div class="form-text justify-content-center d-flex">
+                                                    <p>Nasz doradca oddzwoni do Ciebie</p>
+                                                </div>
+                                            </form>
+                                    </div>
+                                </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <section class="section section-about" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="about" data-aos="fade-down">
+                            <div class="about__items d-flex">
+                                <div class="about__item col-lg-3">
+                                    <div class="service__item">
+                                        <img class="service__icons" src="assets/img/about-1.png" alt="">
+                                        <div class="service__title">Pracujemy dla Ciebie</div>
+                                        <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="about__item col-lg-3">
+                                    <div class="service__item">
+                                        <img class="service__icons" src="assets/img/about-2.png" alt="">
+                                        <div class="service__title">Działamy w prosty sposób</div>
+                                        <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    </div>
+                                </div>
+                                <div class="about__item col-lg-3">
+                                    <div class="service__item">
+                                        <img class="service__icons" src="assets/img/about-3.png" alt="">
+                                        <div class="service__title">Bez opłat wstępnych</div>
+                                        <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    </div>
+                                </div>
+                                <div class="about__item col-lg-3">
+                                    <div class="service__item">
+                                        <img class="service__icons" src="assets/img/about-4.png" alt="">
+                                        <div class="service__title">Spotkajmy się</div>
+                                        <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </section>
+        <section class="section section-why" id="services">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section-why__text" data-aos="fade-down">
+                            <h2 class="section-why__heading">Dlaczego warto pożyczać za pośrednictwem <span class="section-why__span">BKR</span>?</h2>
+                            <div class="section-why__subtext">Odzyskaj spokój finansowy, wybierz ofertę szytą na Twoją miarę</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section-why__photo " data-aos="fade-left">
+                        <img class="section-why__image" src="assets/img/why-bg.png" alt="">
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 section-why__items" data-aos="fade-right">
+                            <div class="section-why__item ">
+                                <img class="section-why__icon" src="assets/img/why-item-1.png" alt="">
+                                <div class="section-why__title">Sprawność działania</div>
+                                <div class="section-why__text1">pomoc w szybkim uzyskaniu dokumentów nieruchomości</div>
+                            </div>
+                            <div class="section-why__item">
+                                <img class="section-why__icon" src="assets/img/why-item-2.png" alt="">
+                                <div class="section-why__title">Minimum formalności</div>
+                                <div class="section-why__text1">wsparcie w poprawnym wypełnianiu wniosków</div>
+                            </div>
+                            <div class="section-why__item">
+                                <img class="section-why__icon" src="assets/img/why-item-3.png" alt="">
+                                <div class="section-why__title">Współpraca z najlepszym</div>
+                                <div class="section-why__text1">wybierasz najlepsze oferty na rynku</div>
+                            </div>
+                            <div class="section-why__item">
+                                <img class="section-why__icon" src="assets/img/why-item-4.png" alt="">
+                                <div class="section-why__title">Indywidualna oferta</div>
+                                <div class="section-why__text1">wiemy jaka oferta Cię usatysfakcjonuje</div>
+                            </div>
+                            <div class="section-why__item">
+                                <img class="section-why__icon" src="assets/img/why-item-5.png" alt="">
+                                <div class="section-why__title">Osobisty doradca</div>
+                                <div class="section-why__text1">pomaga Ci nasz specjalista</div>
+                            </div>
+                            <div class="section-why__item">
+                                <img class="section-why__icon" src="assets/img/why-item-6.png" alt="">
+                                <div class="section-why__title">Brak opłat za porady</div>
+                                <div class="section-why__text1">oszczędzasz pieniądze</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-grey">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12 section-grey__items">
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="section-grey__item" data-aos="fade-down" data-aos-delay="150">
+                                <div class="section-grey__title">Budujesz? Kredyt hipoteczny Ci pomoże</div>
+                                <div class="section-grey__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti aliquid ut nobis natus sunt, reprehenderit nulla accusamus quis quibusdam tempore beatae ratione illo non adipisci doloribus pariatur ipsum doloremque!</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-down" data-aos-delay="250">
+                            <div class="section-grey__item">
+                                <div class="section-grey__title">Na czym polega kredyt hipoteczno-budowlany?</div>
+                                <div class="section-grey__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sint nesciunt obcaecati voluptatibus culpa corporis dignissimos minima pariatur amet veniam, hic nisi sit commodi itaque consectetur eos corrupti error non?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section-grey__heading section-why__text" data-aos="zoom-in">
+                            <h2 class="section-grey__h2 section-why__heading">Zobacz jakie to proste i wygodne</h2>
+                        </div>
+                        <div class="benefits__items col-12" >
+                            <div class="benefits__item" data-aos="fade-up" data-aos-delay="250">
+                                <img class="benefits__item-img" src="assets/img/benefits-1.png" alt="">
+                                <img class="benefits__item-number" src="assets/img/benefits-elipse-1.png" alt="">
+                                <div class="benefits__item-text">
+                                    <div class="benefits__item-title">Spotykamy się</div>
+                                    <div class="benefits__item-subtitle">Sprecyzuj swoje potrzeby, dotyczące kredytu w formularzu na str</div>
+                                </div>
+                            </div>
+                            <div class="benefits__item" data-aos="fade-up" data-aos-delay="450">
+                                <img class="benefits__item-img" src="assets/img/benefits-2.png" alt="">
+                                <img class="benefits__item-number" src="assets/img/benefits-elipse-2.png" alt="">
+                                <div class="benefits__item-text">
+                                    <div class="benefits__item-title">Spotykamy się</div>
+                                    <div class="benefits__item-subtitle">Wybierzemy dla Ciebie najlepsze i najkorzystniejsze rozwiązanie</div>
+                                </div>
+                            </div>
+                            <div class="benefits__item" data-aos="fade-up" data-aos-delay="650">
+                                <img class="benefits__item-img" src="assets/img/benefits-3.png" alt="">
+                                <img class="benefits__item-number" src="assets/img/benefits-elipse-3.png" alt="">
+                                <div class="benefits__item-text">
+                                    <div class="benefits__item-title">Spotykamy się</div>
+                                    <div class="benefits__item-subtitle">Spotkamy się w naszym biurze i omówimy szczegóły przedstawionyc</div>
+                                </div>
+                            </div>
+                            <div class="benefits__item" data-aos="fade-up" data-aos-delay="850">
+                                <img class="benefits__item-img" src="assets/img/benefits-4.png" alt="">
+                                <img class="benefits__item-number" src="assets/img/benefits-elipse-4.png" alt="">
+                                <div class="benefits__item-text">
+                                    <div class="benefits__item-title">Finalizujemy współpracę</div>
+                                    <div class="benefits__item-subtitle">Ograniczymy Tobie formalności do minimum, a my zajmiemy się res</div>
+                                </div>
+                            </div>
+                            <div class="benefits__item" data-aos="fade-up" data-aos-delay="1050">
+                                <img class="benefits__item-img" src="assets/img/benefits-5.png" alt="">
+                                <img class="benefits__item-number" src="assets/img/benefits-elipse-5.png" alt="">
+                                <div class="benefits__item-text">
+                                    <div class="benefits__item-title">Cieszysz się kredytem</div>
+                                    <div class="benefits__item-subtitle">Ty cieszysz się z kredytu, a my z tego, że mogliśmy pomóc</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="section section-team" >
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section-team__text" data-aos="zoom-in">
+                            <h2 class="section-team__heading">Poznaj naszych doradców</h2>
+                            <div class="section-team__subtext">Masz pytanie? Skontaktuj się z nami. Nie pobieramy opłat wstępnych</div>
+                        </div>
+                        <div class="section-team__slider" >
+                            
+                            <div class="section-team__cards col-12" >
+                                <div class="slider__arrows">
+                                    <div class="slider__arrow-left">
+                                        <img src="assets/img/arrow-left.png" alt="">
+                                    </div>
+                                    <div class="slider__arrow-right">
+                                        <img src="assets/img/arrow-right.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="section-team__card" data-aos="fade-down" data-aos-delay="150">
+                                    <div class="section-team__photo">
+                                        <img src="assets/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="section-team__about">
+                                        <div class="section-team__title">Wojciech Urban</div>
+                                        <div class="section-team__subtitle">Doradca klienta indywidualnego</div>
+                                    </div>
+                                    <div class="section-team__contact">
+                                        <div class="section-team__phone">
+                                            <img class="section-team__phone-img" src="assets/img/team-phone.png" alt="">
+                                            <a href="tel:+48177707233">(+48) 17 770 72 33</a>
+                                        </div>
+                                        <div class="section-team__mail">
+                                            <img class="section-team__mail-img" src="assets/img/team-mail.png" alt="">
+                                            <a href="mailto:w.urban@rzeszowkredyty.pl">w.urban@rzeszowkredyty.pl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-team__card" data-aos="fade-down" data-aos-delay="250">
+                                    <div class="section-team__photo">
+                                        <img src="assets/img/team-2.png" alt="">
+                                    </div>
+                                    <div class="section-team__about">
+                                        <div class="section-team__title">Michał Partyka</div>
+                                        <div class="section-team__subtitle">Właściciel</div>
+                                    </div>
+                                    <div class="section-team__contact">
+                                        <div class="section-team__phone">
+                                            <img class="section-team__phone-img" src="assets/img/team-phone.png" alt="">
+                                            <a href="tel:+48177707233">(+48) 17 770 72 33</a>
+                                        </div>
+                                        <div class="section-team__mail">
+                                            <img class="section-team__mail-img" src="assets/img/team-mail.png" alt="">
+                                            <a href="mailto:partyka@rzeszowkredyty.pl">partyka@rzeszowkredyty.pl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-team__card" data-aos="fade-down" data-aos-delay="350">
+                                    <div class="section-team__photo">
+                                        <img src="assets/img/team-3.png" alt="">
+                                    </div>
+                                    <div class="section-team__about">
+                                        <div class="section-team__title">Nikodem Goraj</div>
+                                        <div class="section-team__subtitle">Doradca klienta biznesowego</div>
+                                    </div>
+                                    <div class="section-team__contact">
+                                        <div class="section-team__phone">
+                                            <img class="section-team__phone-img" src="assets/img/team-phone.png" alt="">
+                                            <a href="tel:+48177707233">(+48) 17 770 72 33</a>
+                                        </div>
+                                        <div class="section-team__mail">
+                                            <img class="section-team__mail-img" src="assets/img/team-mail.png" alt="">
+                                            <a href="mailto:n.goraj@rzeszowkredyty.pl">n.goraj@rzeszowkredyty.pl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="section-team__text" data-aos="zoom-in">
+                            <h5 class="section-team__subtext">Zapraszamy do naszego biura. <span class="section-team__text-bold">Rzeszów ul. Króla Kazimierza 18, piętro I</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-quantity">
+            <div class="container-fluid section-quantity">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="counter">
+                            <div class="container">
+                                <div class="section-quantity__text" data-aos="zoom-out">
+                                    <h2 class="section-quantity__heading"><span class="section-why__span">BKR</span> w liczbach</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="employees" data-aos="fade-in" data-aos-delay="150">
+                                            <p class="counter-count">252</p>
+                                            <p class="employee-p">zadowolonych klientów</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="customer" data-aos="fade-in" data-aos-delay="250">
+                                            <p class="counter-count">189.70</p><span class="counter-count__text">mln zł</span>
+                                            <p class="customer-p">suma przyznanych kredytów</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="design" data-aos="fade-in" data-aos-delay="350">
+                                            <p class="counter-count">6</p>
+                                            <p class="design-p">profesjonalnych doradców</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__content">
+                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 reviews__text">
+                                    <div class="reviews__headings" >
+                                        <div class="reviews__title" data-aos="zoom-in" data-aos-delay="150">Opinie naszych klientów</div>
+                                        <div class="reviews__subtitle" data-aos="zoom-in" data-aos-delay="350">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam eos iure voluptatibus non mollitia consequatur provident temporibus possimus officia sint quis modi fugiat exercitationem, minus in soluta sequi ad!</div>
+                                        <div class="reviews__author" data-aos="zoom-in" data-aos-delay="650">Polecam Biuro Kredytowe BKR Anna z Rzeszowa</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 reviews-photo" data-aos="zoom-in" data-aos-delay="850"> 
+                                    <img class="reviews__photo" src="assets/img/reviews.png" alt="" >
+                                </div>
+                                
+                                </div>
+                                <div class="reviews__quotemark" data-aos="zoom-in" data-aos-delay="1250">
+                                    <img src="assets/img/quotermark.png" alt="">
+                                </div>
+                            </div>
+                        
+                            
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="section section-grey-info">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section__info-grey">
+                            <div class="section__info">
+                                <div class="section__info-item" data-aos="zoom-out" data-aos-delay="150">
+                                    <div class="section__info-text">
+                                        <div class="section__info-title">Chcesz dołączyć do grona</div>
+                                        <div class="section__info-subtitle">zadowolonych klientów BKR?</div>
+                                    </div>
+                                </div>
+                                <div class="section__info-item" data-aos="zoom-out" data-aos-delay="450">
+                                    <div class="form-button button-yellow">
+                                        <button type="submit" class="btn-submit align-items-center">Chcę pożyczkę</button>
+                                    </div>
+                                </div>
+                                <div class="section__info-item" data-aos="zoom-in" data-aos-delay="750">
+                                    <div class="section__info-contact">
+                                        <div class="section__info-name">Kontakt z doradcą</div>
+                                        <div class="section__info-phone">
+                                            <img class="section__info-img" src="assets/img/section-info-phone.png" alt="">
+                                            <a class="section__info-tel" href="tel:+48177707233">(+48) 17 770 72 33</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </div>  
+        </section> 
+        <section class="section section-rules">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="section__rules" data-aos="fade-in" data-aos-delay="250">
+                        <p class="section-rules__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium id sit quaerat repudiandae, quibusdam at veniam explicabo dolores dicta. Non quod consequatur ut eos perspiciatis consectetur doloremque id beatae ducimus!</p><br>
+                        <p class="section-rules__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut, necessitatibus odio deleniti tempore nihil mollitia praesentium assumenda, error adipisci debitis. Reiciendis eos dolorum corrupti reprehenderit iure fuga dolorem quo!</p><br>
+                        <p class="section-rules__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium id sit quaerat
+                            repudiandae, quibusdam at veniam explicabo dolores dicta. Non quod consequatur ut eos perspiciatis lore consectetur
+                            doloremque id beatae ducimus!</p><br>
+                        <p class="section-rules__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut, necessitatibus odio
+                            deleniti tempore nihil mollitia praesentium assumenda, error adipisci debitis. Reiciendis eos dolorum corrupti
+                            reprehenderit iure fuga dolorem quo!</p><br>
+                        <p class="section-rules__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium id sit quaerat
+                                repudiandae, quibusdam at veniam explicabo dolores dicta. Non quod consequatur ut eos perspiciatis consectetur
+                                doloremque id beatae ducimus!</p><br>
+                        <p class="section-rules__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut, necessitatibus odio
+                                deleniti tempore nihil mollitia praesentium assumenda, error adipisci debitis. Reiciendis eos dolorum corrupti
+                                reprehenderit iure fuga dolorem quo!</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row align-items-center d-flex">
+                    <div class="col-xl-12">
+                        <div class="footer__social-content">
+                            <a class="social__icon" href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social__icon" href="#" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="social__icon" href="#" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>    
+        </footer>
+</body>
+
+<!-- Подключаем jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Подключаем Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+
+    
+    
+</html>
